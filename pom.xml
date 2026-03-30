@@ -5,6 +5,9 @@
 	<groupId>RunMultipleXMLs</groupId>
 	<artifactId>RunMultipleXMLs</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<properties> 
+		<suiteFile>XMLs/sanity.xml</suiteFile>
+	</properties>
 
 	<build>
 		<plugins>
@@ -14,9 +17,8 @@
 				<version>3.0.0-M5</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>XMLs/sanity.xml</suiteXmlFile>
-						<suiteXmlFile>XMLs/regression.xml</suiteXmlFile>
-						<suiteXmlFile>XMLs/coverage.xml</suiteXmlFile>
+						<suiteXmlFile>${suiteFile}</suiteXmlFile>
+						
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
